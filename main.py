@@ -28,11 +28,12 @@ def simplify():
         sop, verilog = simplify_kmap_sop(minterms, dc_terms)
 
         print(f"\nSimplified SOP:\n{sop}\n")
-        print(f"Verilog Output:\n{verilog}\n")
+        print(f"Verilog Code:\n{verilog}\n")
 
     except ValueError as e:
         print(f"Input error: {str(e)}")
 
 
 if __name__ == "__main__":
+
     simplify()
